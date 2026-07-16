@@ -1,0 +1,10 @@
+{
+  "manifest_version": 3,
+  "name": "HTK Bridge",
+  "version": "0.1.0",
+  "description": "Kết nối HTKstudio với các nền tảng AI trên trình duyệt.",
+  "permissions": ["storage", "tabs"],
+  "host_permissions": ["https://labs.google/*", "https://chatgpt.com/*", "https://grok.com/*", "http://127.0.0.1:3120/*"],
+  "background": {"service_worker": "background.js"},
+  "action": {"default_popup": "popup.html", "default_title": "HTK Bridge"}
+}

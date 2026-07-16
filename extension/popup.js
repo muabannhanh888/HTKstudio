@@ -1,0 +1,1 @@
+function refresh(){chrome.runtime.sendMessage({type:'status'},s=>{const on=Boolean(s?.bridgeConnected);document.querySelector('#dot').className='dot '+(on?'on':'');document.querySelector('#status').textContent=on?'Đã kết nối HTKstudio':'Chưa kết nối';});}document.querySelector('#reload').onclick=()=>chrome.runtime.reload();refresh();
